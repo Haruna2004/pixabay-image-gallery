@@ -1,3 +1,18 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.transit-foot {
+    animation: easeInFooter 0.5s ease-in;;
+}
+
+@keyframes easeInFooter {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 200px;
+    }
+  }
+  
