@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageSearch from "./ImageSearch";
-import FootButton from "./FootButton";
 
 function App() {
   const [images,setImages] = useState([])
   const [isLoading,setIsLoading] = useState(true)
   const [term, setTerm ] = useState("")
-  const [isFooter,setIsFooter] = useState(true)
 
   useEffect(() => {
     fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`)
