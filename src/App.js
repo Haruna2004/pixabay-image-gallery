@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ImageCard from "./ImageCard";
 import ImageSearch from "./ImageSearch";
-import Footer from "./Footer";
 import FootButton from "./FootButton";
 
 function App() {
@@ -32,13 +31,6 @@ function App() {
         ))}
       </div>
       }
-      {isFooter?
-      <Footer 
-        isFooter={isFooter}
-        setIsFooter={setIsFooter}
-      />:<FootButton 
-        isFooter={isFooter}
-        setIsFooter={setIsFooter} /> }
     </div>
   );
 }
